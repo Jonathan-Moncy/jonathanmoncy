@@ -6,20 +6,22 @@
 <title>Jonathan Varghese Moncy</title>
 <script>
   // GitHub Pages 404 redirect trick
-  // When someone visits /contact or /about etc, GitHub serves this 404 page
-  // We grab the path, store it, and redirect to index.html which picks it up
+  // When someone visits /contact or /about etc, GitHub serves this 404 page.
+  // We grab the path, store it, and redirect to index.html which picks it up.
   var path = window.location.pathname;
-  // Strip the repo name prefix if present e.g. /JonathanVargheseMoncyPortfolio.com/contact
+  // Strip trailing slashes
+  path = path.replace(/\/+$/, '');
+  // Get last path segment (the page slug)
   var segments = path.split('/').filter(Boolean);
-  // Last segment is the page slug
   var page = segments[segments.length - 1] || 'home';
+  // Don't store '.html' extensions
+  page = page.replace(/\.html$/i, '');
   // Store in sessionStorage so index.html can read it
-  sessionStorage.setItem('redirect_page', page);
+  sessionStorage.setItem('redirect_page', page.toLowerCase());
   // Redirect to root
-  var base = window.location.href.split(window.location.pathname)[0];
-  var root = window.location.pathname.includes('/JonathanVargheseMoncyPortfolio.com')
-    ? base + '/JonathanVargheseMoncyPortfolio.com/'
-    : base + '/';
+  var base = window.location.origin;
+  var isRepo = path.includes('/JonathanVargheseMoncyPortfolio.com');
+  var root = isRepo ? base + '/JonathanVargheseMoncyPortfolio.com/' : base + '/';
   window.location.replace(root);
 </script>
 </head>
