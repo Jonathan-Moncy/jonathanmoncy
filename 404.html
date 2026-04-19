@@ -2,27 +2,25 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jonathan Varghese Moncy</title>
 <script>
-  // GitHub Pages 404 redirect trick
-  // When someone visits /contact or /about etc, GitHub serves this 404 page.
-  // We grab the path, store it, and redirect to index.html which picks it up.
+  // GitHub Pages 404 clean URL redirect
+  // Maps /contact -> #contact, /experience -> #experience etc
+  var slugs = ['home','about','experience','skills','certifications','projects','contact'];
   var path = window.location.pathname;
-  // Strip trailing slashes
-  path = path.replace(/\/+$/, '');
-  // Get last path segment (the page slug)
   var segments = path.split('/').filter(Boolean);
-  var page = segments[segments.length - 1] || 'home';
-  // Don't store '.html' extensions
-  page = page.replace(/\.html$/i, '');
-  // Store in sessionStorage so index.html can read it
-  sessionStorage.setItem('redirect_page', page.toLowerCase());
-  // Redirect to root
-  var base = window.location.origin;
-  var isRepo = path.includes('/JonathanVargheseMoncyPortfolio.com');
-  var root = isRepo ? base + '/JonathanVargheseMoncyPortfolio.com/' : base + '/';
-  window.location.replace(root);
+  var last = segments[segments.length - 1] || '';
+  // Check if last segment is a known page slug
+  var page = slugs.indexOf(last) >= 0 ? last : 'home';
+  sessionStorage.setItem('redirect_page', page);
+  // Redirect to root of the site
+  var origin = window.location.origin;
+  var repoPath = '';
+  // Detect GitHub Pages repo subpath e.g. /JonathanVargheseMoncyPortfolio.com/
+  if(segments.length > 1 && slugs.indexOf(segments[0]) < 0){
+    repoPath = '/' + segments[0];
+  }
+  window.location.replace(origin + repoPath + '/');
 </script>
 </head>
 <body></body>
