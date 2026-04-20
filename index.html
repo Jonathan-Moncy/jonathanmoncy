@@ -393,7 +393,7 @@ footer{background:var(--black2);border-top:1px solid var(--border);padding:2.5re
       </div>
     </div>
     <div class="hero-stats rv-r">
-      <div class="stat"><div class="stat-n">3</div><div class="stat-l">Certifications<br>Earned</div></div>
+      <div class="stat"><div class="stat-n">5</div><div class="stat-l">Certifications<br>Earned</div></div>
       <div class="stat"><div class="stat-n">1</div><div class="stat-l">Novel<br>Published</div></div>
       <div class="stat"><div class="stat-n">2+</div><div class="stat-l">Years<br>Experience</div></div>
     </div>
@@ -434,12 +434,12 @@ footer{background:var(--black2);border-top:1px solid var(--border);padding:2.5re
           <div class="qcard-d">Kaggle certified. Applying ML to real-world AI projects including chatbots.</div>
         </div>
         <div class="qcard">
-          <lord-icon src="https://cdn.lordicon.com/wloilxuq.json" trigger="hover" colors="primary:#F5C542,secondary:#F5C542" style="width:44px;height:44px"></lord-icon>
+          <lord-icon src="https://cdn.lordicon.com/zfmgiirf.json" trigger="hover" colors="primary:#F5C542,secondary:#F5C542" style="width:44px;height:44px"></lord-icon>
           <div class="qcard-t">Game Development</div>
           <div class="qcard-d">Building Hell Runner in Unity 6, targeting App Store release.</div>
         </div>
         <div class="qcard">
-          <lord-icon src="https://cdn.lordicon.com/rpgflpbd.json" trigger="hover" colors="primary:#F5C542,secondary:#F5C542" style="width:44px;height:44px"></lord-icon>
+          <lord-icon src="https://cdn.lordicon.com/wloilxuq.json" trigger="hover" colors="primary:#F5C542,secondary:#F5C542" style="width:44px;height:44px"></lord-icon>
           <div class="qcard-t">Creative Writing</div>
           <div class="qcard-d">Published fantasy novelist on Amazon. Storytelling as discipline.</div>
         </div>
@@ -664,7 +664,7 @@ footer{background:var(--black2);border-top:1px solid var(--border);padding:2.5re
         </div>
         <div class="sk-card rv">
           <div class="sk-head">
-            <lord-icon src="https://cdn.lordicon.com/wloilxuq.json" trigger="hover" colors="primary:#F5C542,secondary:#F5C542" style="width:40px;height:40px"></lord-icon>
+            <lord-icon src="https://cdn.lordicon.com/zfmgiirf.json" trigger="hover" colors="primary:#F5C542,secondary:#F5C542" style="width:40px;height:40px"></lord-icon>
             <div class="sk-t">Game Development</div>
           </div>
           <div class="sk-tags">
@@ -682,7 +682,7 @@ footer{background:var(--black2);border-top:1px solid var(--border);padding:2.5re
         </div>
         <div class="sk-card rv">
           <div class="sk-head">
-            <lord-icon src="https://cdn.lordicon.com/rpgflpbd.json" trigger="hover" colors="primary:#F5C542,secondary:#F5C542" style="width:40px;height:40px"></lord-icon>
+            <lord-icon src="https://cdn.lordicon.com/wloilxuq.json" trigger="hover" colors="primary:#F5C542,secondary:#F5C542" style="width:40px;height:40px"></lord-icon>
             <div class="sk-t">Creative Writing</div>
           </div>
           <div class="sk-tags">
@@ -846,12 +846,12 @@ footer{background:var(--black2);border-top:1px solid var(--border);padding:2.5re
         <h2 class="sec-title rv" style="margin-bottom:2.5rem">Other <em>Achievements</em></h2>
         <div class="achiev-grid rv">
           <div class="achiev">
-            <lord-icon src="https://cdn.lordicon.com/rpgflpbd.json" trigger="hover" colors="primary:#F5C542,secondary:#F5C542" style="width:40px;height:40px"></lord-icon>
+            <lord-icon src="https://cdn.lordicon.com/wloilxuq.json" trigger="hover" colors="primary:#F5C542,secondary:#F5C542" style="width:40px;height:40px"></lord-icon>
             <div class="achiev-t">Published Author</div>
             <div class="achiev-d">Dragon Knight: Leaf, The Champion — fantasy novel available on Amazon worldwide.</div>
           </div>
           <div class="achiev">
-            <lord-icon src="https://cdn.lordicon.com/wloilxuq.json" trigger="hover" colors="primary:#F5C542,secondary:#F5C542" style="width:40px;height:40px"></lord-icon>
+            <lord-icon src="https://cdn.lordicon.com/zfmgiirf.json" trigger="hover" colors="primary:#F5C542,secondary:#F5C542" style="width:40px;height:40px"></lord-icon>
             <div class="achiev-t">LEGO Robotics · Best Presentation Award</div>
             <div class="achiev-d">Competed in a team LEGO robotics competition and earned recognition for best presentation skills.</div>
           </div>
@@ -1129,7 +1129,7 @@ footer{background:var(--black2);border-top:1px solid var(--border);padding:2.5re
           </div>
           <div class="c-item">
             <div class="c-icon"><lord-icon src="https://cdn.lordicon.com/tyvtvbcy.json" trigger="hover" colors="primary:#F5C542,secondary:#F5C542" style="width:24px;height:24px"></lord-icon></div>
-            <div><div class="c-lbl">Phone</div><div class="c-val"><a href="tel:+971522522833">+971 522 522 833</a></div></div>
+            <div style="min-width:0"><div class="c-lbl">Phone</div><div class="c-val" style="white-space:nowrap"><a href="tel:+971522522833">+971&nbsp;522&nbsp;522&nbsp;833</a></div></div>
           </div>
           <div class="c-item">
             <div class="c-icon"><lord-icon src="https://cdn.lordicon.com/mwikjdwh.json" trigger="hover" colors="primary:#F5C542,secondary:#F5C542" style="width:24px;height:24px"></lord-icon></div>
@@ -1356,36 +1356,73 @@ window.addEventListener('DOMContentLoaded',()=>{
 });
 
 /* ── EMAILJS INIT ── */
+/* ══════════════════════════════════════════════════
+   HOW TO ACTIVATE THE CONTACT FORM:
+   1. Go to https://www.emailjs.com and create a free account
+   2. Add an Email Service (Gmail recommended) — copy your Service ID
+   3. Create an Email Template with these variables:
+        {{from_name}}  {{from_email}}  {{subject}}  {{message}}
+      Set "To Email" in the template to: jonathanvarghesem@gmail.com
+      Copy your Template ID
+   4. Go to Account → API Keys → copy your Public Key
+   5. Replace the three placeholders below with your actual values
+══════════════════════════════════════════════════ */
+const EMAILJS_PUBLIC_KEY   = 'YOUR_PUBLIC_KEY';   // ← replace
+const EMAILJS_SERVICE_ID   = 'YOUR_SERVICE_ID';   // ← replace
+const EMAILJS_TEMPLATE_ID  = 'YOUR_TEMPLATE_ID';  // ← replace
+
 (function(){
-  emailjs.init({publicKey:'YOUR_EMAILJS_PUBLIC_KEY'});
+  emailjs.init({publicKey: EMAILJS_PUBLIC_KEY});
 })();
+
 function submitForm(){
-  const fn=document.getElementById('cf-fn').value;
-  const em=document.getElementById('cf-em').value;
-  const msg=document.getElementById('cf-msg').value;
-  const hp=document.getElementById('cf-hp').value;
-  const btn=document.getElementById('cf-btn');
-  // Honeypot check — bots fill hidden field, humans never see it
-  if(hp){
-    // Bot detected — silently pretend success
-    btn.querySelector('.btn-p-inner').textContent='Message Sent!';
-    btn.style.background='#1A936F';
-    setTimeout(()=>{btn.querySelector('.btn-p-inner').textContent='Send Message';btn.style.background='';},3000);
-    return;
-  }
+  const fn  = document.getElementById('cf-fn').value.trim();
+  const ln  = document.getElementById('cf-ln').value.trim();
+  const em  = document.getElementById('cf-em').value.trim();
+  const sub = document.getElementById('cf-sub').value.trim();
+  const msg = document.getElementById('cf-msg').value.trim();
+  const hp  = document.getElementById('cf-hp').value;
+  const btn = document.getElementById('cf-btn');
+  const lbl = btn.querySelector('.btn-p-inner');
+
+  // Honeypot — bots fill this, humans don't
+  if(hp){ lbl.textContent='Message Sent!'; btn.style.background='#1A936F'; setTimeout(()=>{lbl.textContent='Send Message';btn.style.background=''},3000); return; }
+
+  // Validation
   if(!fn||!em||!msg){
-    btn.querySelector('.btn-p-inner').textContent='Fill required fields';
+    lbl.textContent='Fill required fields';
     btn.style.background='#c49200';
-    setTimeout(()=>{btn.querySelector('.btn-p-inner').textContent='Send Message';btn.style.background=''},2500);
+    setTimeout(()=>{lbl.textContent='Send Message';btn.style.background=''},2500);
     return;
   }
-  btn.querySelector('.btn-p-inner').textContent='Message Sent!';
-  btn.style.background='#1A936F';
-  setTimeout(()=>{
-    btn.querySelector('.btn-p-inner').textContent='Send Message';
-    btn.style.background='';
-    ['cf-fn','cf-ln','cf-em','cf-sub','cf-msg','cf-hp'].forEach(id=>document.getElementById(id).value='');
-  },3000);
+
+  // Disable button while sending
+  btn.disabled=true;
+  lbl.textContent='Sending…';
+
+  emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+    from_name:  fn + (ln ? ' '+ln : ''),
+    from_email: em,
+    subject:    sub || '(No subject)',
+    message:    msg
+  }).then(()=>{
+    lbl.textContent='Message Sent! ✓';
+    btn.style.background='#1A936F';
+    btn.disabled=false;
+    setTimeout(()=>{
+      lbl.textContent='Send Message';
+      btn.style.background='';
+      ['cf-fn','cf-ln','cf-em','cf-sub','cf-msg','cf-hp'].forEach(id=>{
+        const el=document.getElementById(id); if(el) el.value='';
+      });
+    },3000);
+  }).catch((err)=>{
+    console.error('EmailJS error:',err);
+    lbl.textContent='Failed — try again';
+    btn.style.background='#c0392b';
+    btn.disabled=false;
+    setTimeout(()=>{lbl.textContent='Send Message';btn.style.background=''},3000);
+  });
 }
 </script>
 </body>
