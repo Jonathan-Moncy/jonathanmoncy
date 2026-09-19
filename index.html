@@ -301,6 +301,25 @@ footer{background:var(--black2);border-top:1px solid var(--border);padding:2.5re
 .foot-links button:hover{color:var(--yellow)}
 .foot-copy{font-size:.7rem;color:var(--muted);letter-spacing:.04em}
 
+
+/* ════════════════════════════════════════════
+   BLOG PAGE
+════════════════════════════════════════════ */
+.blog-feed{max-width:780px;margin:0 auto;padding:0 5vw 6rem}
+.blog-post{border-bottom:1px solid var(--border);padding:4rem 0}
+.blog-post:first-child{padding-top:0}
+.blog-post:last-child{border-bottom:none}
+.bp-meta{display:flex;align-items:center;gap:1rem;margin-bottom:1.2rem;flex-wrap:wrap}
+.bp-tag{font-size:.65rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--black);background:var(--yellow);padding:.25rem .7rem;border-radius:999px}
+.bp-date{font-size:.72rem;color:var(--muted);letter-spacing:.05em}
+.bp-title{font-family:var(--ff-display);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:900;line-height:1.15;margin-bottom:1rem;color:var(--white)}
+.bp-title em{color:var(--yellow);font-style:normal}
+.bp-body{color:var(--muted);line-height:1.85;font-size:1rem}
+.bp-body p{margin-bottom:1.2rem}
+.bp-body p:last-child{margin-bottom:0}
+.bp-body strong{color:var(--white);font-weight:700}
+.bp-body em{color:var(--yellow);font-style:italic}
+.bp-divider{width:48px;height:3px;background:var(--yellow);margin:1.6rem 0;border-radius:2px}
 /* ════════════════════════════════════════════
    RESPONSIVE
 ════════════════════════════════════════════ */
@@ -346,6 +365,7 @@ footer{background:var(--black2);border-top:1px solid var(--border);padding:2.5re
       <button class="nl"        data-page="skills"  onclick="goTo('skills')">Skills</button>
       <button class="nl"        data-page="certs"   onclick="goTo('certs')">Certifications</button>
       <button class="nl"        data-page="proj"    onclick="goTo('proj')">Projects</button>
+      <button class="nl"        data-page="blog"    onclick="goTo('blog')">Blog</button>
       <button class="nl cta"    data-page="contact" onclick="goTo('contact')">Contact</button>
     </div>
     <button class="hbg" id="hbg"><span></span><span></span><span></span></button>
@@ -357,6 +377,7 @@ footer{background:var(--black2);border-top:1px solid var(--border);padding:2.5re
     <a class="ml" onclick="goTo('skills');closeMob()" href="#">Skills</a>
     <a class="ml" onclick="goTo('certs');closeMob()" href="#">Certifications</a>
     <a class="ml" onclick="goTo('proj');closeMob()" href="#">Projects</a>
+    <a class="ml" onclick="goTo('blog');closeMob()" href="#">Blog</a>
     <a class="ml" onclick="goTo('contact');closeMob()" href="#">Contact</a>
   </div>
 </nav>
@@ -467,7 +488,7 @@ footer{background:var(--black2);border-top:1px solid var(--border);padding:2.5re
       <button onclick="goTo('proj')">Projects</button>
       <button onclick="goTo('contact')">Contact</button>
     </div>
-    <div class="foot-copy">© 2026 Jonathan Varghese Moncy · Dubai, UAE</div>
+    <div style="display:flex;align-items:center;gap:1rem"><a href="https://linkedin.com/in/jonathan-moncy-49a02a246" target="_blank" rel="noopener" style="color:var(--muted);font-size:.7rem;letter-spacing:.04em;transition:color .2s" onmouseover="this.style.color='#F5C542'" onmouseout="this.style.color=''">LinkedIn</a><div class="foot-copy">© 2026 Jonathan Varghese Moncy · Dubai, UAE</div></div>
   </div></footer>
 </div>
 
@@ -525,8 +546,8 @@ footer{background:var(--black2);border-top:1px solid var(--border);padding:2.5re
 
   <footer><div class="foot-in">
     <div class="foot-logo">JVM<span>.</span></div>
-    <div class="foot-links"><button onclick="goTo('home')">Home</button><button onclick="goTo('about')">About</button><button onclick="goTo('exp')">Experience</button><button onclick="goTo('proj')">Projects</button><button onclick="goTo('contact')">Contact</button></div>
-    <div class="foot-copy">© 2026 Jonathan Varghese Moncy · Dubai, UAE</div>
+    <div class="foot-links"><button onclick="goTo('home')">Home</button><button onclick="goTo('about')">About</button><button onclick="goTo('exp')">Experience</button><button onclick="goTo('proj')">Projects</button><button onclick="goTo('blog')">Blog</button><button onclick="goTo('contact')">Contact</button></div>
+    <div style="display:flex;align-items:center;gap:1rem"><a href="https://linkedin.com/in/jonathan-moncy-49a02a246" target="_blank" rel="noopener" style="color:var(--muted);font-size:.7rem;letter-spacing:.04em;transition:color .2s" onmouseover="this.style.color='#F5C542'" onmouseout="this.style.color=''">LinkedIn</a><div class="foot-copy">© 2026 Jonathan Varghese Moncy · Dubai, UAE</div></div>
   </div></footer>
 </div>
 
@@ -621,8 +642,8 @@ footer{background:var(--black2);border-top:1px solid var(--border);padding:2.5re
 
   <footer><div class="foot-in">
     <div class="foot-logo">JVM<span>.</span></div>
-    <div class="foot-links"><button onclick="goTo('home')">Home</button><button onclick="goTo('about')">About</button><button onclick="goTo('exp')">Experience</button><button onclick="goTo('proj')">Projects</button><button onclick="goTo('contact')">Contact</button></div>
-    <div class="foot-copy">© 2026 Jonathan Varghese Moncy · Dubai, UAE</div>
+    <div class="foot-links"><button onclick="goTo('home')">Home</button><button onclick="goTo('about')">About</button><button onclick="goTo('exp')">Experience</button><button onclick="goTo('proj')">Projects</button><button onclick="goTo('blog')">Blog</button><button onclick="goTo('contact')">Contact</button></div>
+    <div style="display:flex;align-items:center;gap:1rem"><a href="https://linkedin.com/in/jonathan-moncy-49a02a246" target="_blank" rel="noopener" style="color:var(--muted);font-size:.7rem;letter-spacing:.04em;transition:color .2s" onmouseover="this.style.color='#F5C542'" onmouseout="this.style.color=''">LinkedIn</a><div class="foot-copy">© 2026 Jonathan Varghese Moncy · Dubai, UAE</div></div>
   </div></footer>
 </div>
 
@@ -726,8 +747,8 @@ footer{background:var(--black2);border-top:1px solid var(--border);padding:2.5re
 
   <footer><div class="foot-in">
     <div class="foot-logo">JVM<span>.</span></div>
-    <div class="foot-links"><button onclick="goTo('home')">Home</button><button onclick="goTo('about')">About</button><button onclick="goTo('exp')">Experience</button><button onclick="goTo('proj')">Projects</button><button onclick="goTo('contact')">Contact</button></div>
-    <div class="foot-copy">© 2026 Jonathan Varghese Moncy · Dubai, UAE</div>
+    <div class="foot-links"><button onclick="goTo('home')">Home</button><button onclick="goTo('about')">About</button><button onclick="goTo('exp')">Experience</button><button onclick="goTo('proj')">Projects</button><button onclick="goTo('blog')">Blog</button><button onclick="goTo('contact')">Contact</button></div>
+    <div style="display:flex;align-items:center;gap:1rem"><a href="https://linkedin.com/in/jonathan-moncy-49a02a246" target="_blank" rel="noopener" style="color:var(--muted);font-size:.7rem;letter-spacing:.04em;transition:color .2s" onmouseover="this.style.color='#F5C542'" onmouseout="this.style.color=''">LinkedIn</a><div class="foot-copy">© 2026 Jonathan Varghese Moncy · Dubai, UAE</div></div>
   </div></footer>
 </div>
 
@@ -867,8 +888,8 @@ footer{background:var(--black2);border-top:1px solid var(--border);padding:2.5re
 
   <footer><div class="foot-in">
     <div class="foot-logo">JVM<span>.</span></div>
-    <div class="foot-links"><button onclick="goTo('home')">Home</button><button onclick="goTo('about')">About</button><button onclick="goTo('exp')">Experience</button><button onclick="goTo('proj')">Projects</button><button onclick="goTo('contact')">Contact</button></div>
-    <div class="foot-copy">© 2026 Jonathan Varghese Moncy · Dubai, UAE</div>
+    <div class="foot-links"><button onclick="goTo('home')">Home</button><button onclick="goTo('about')">About</button><button onclick="goTo('exp')">Experience</button><button onclick="goTo('proj')">Projects</button><button onclick="goTo('blog')">Blog</button><button onclick="goTo('contact')">Contact</button></div>
+    <div style="display:flex;align-items:center;gap:1rem"><a href="https://linkedin.com/in/jonathan-moncy-49a02a246" target="_blank" rel="noopener" style="color:var(--muted);font-size:.7rem;letter-spacing:.04em;transition:color .2s" onmouseover="this.style.color='#F5C542'" onmouseout="this.style.color=''">LinkedIn</a><div class="foot-copy">© 2026 Jonathan Varghese Moncy · Dubai, UAE</div></div>
   </div></footer>
 </div>
 
@@ -1098,8 +1119,8 @@ footer{background:var(--black2);border-top:1px solid var(--border);padding:2.5re
 
   <footer><div class="foot-in">
     <div class="foot-logo">JVM<span>.</span></div>
-    <div class="foot-links"><button onclick="goTo('home')">Home</button><button onclick="goTo('about')">About</button><button onclick="goTo('exp')">Experience</button><button onclick="goTo('proj')">Projects</button><button onclick="goTo('contact')">Contact</button></div>
-    <div class="foot-copy">© 2026 Jonathan Varghese Moncy · Dubai, UAE</div>
+    <div class="foot-links"><button onclick="goTo('home')">Home</button><button onclick="goTo('about')">About</button><button onclick="goTo('exp')">Experience</button><button onclick="goTo('proj')">Projects</button><button onclick="goTo('blog')">Blog</button><button onclick="goTo('contact')">Contact</button></div>
+    <div style="display:flex;align-items:center;gap:1rem"><a href="https://linkedin.com/in/jonathan-moncy-49a02a246" target="_blank" rel="noopener" style="color:var(--muted);font-size:.7rem;letter-spacing:.04em;transition:color .2s" onmouseover="this.style.color='#F5C542'" onmouseout="this.style.color=''">LinkedIn</a><div class="foot-copy">© 2026 Jonathan Varghese Moncy · Dubai, UAE</div></div>
   </div></footer>
 </div>
 
@@ -1135,6 +1156,10 @@ footer{background:var(--black2);border-top:1px solid var(--border);padding:2.5re
             <div class="c-icon"><lord-icon src="https://cdn.lordicon.com/mwikjdwh.json" trigger="hover" colors="primary:#F5C542,secondary:#F5C542" style="width:24px;height:24px"></lord-icon></div>
             <div><div class="c-lbl">Location</div><div class="c-val">Dubai, United Arab Emirates</div></div>
           </div>
+          <div class="c-item">
+            <div class="c-icon"><lord-icon src="https://cdn.lordicon.com/cnpvyndp.json" trigger="hover" colors="primary:#F5C542,secondary:#F5C542" style="width:24px;height:24px"></lord-icon></div>
+            <div><div class="c-lbl">LinkedIn</div><div class="c-val"><a href="https://linkedin.com/in/jonathan-moncy-49a02a246" target="_blank" rel="noopener">jonathan-moncy-49a02a246</a></div></div>
+          </div>
         </div>
         <div style="border-top:1px solid var(--border);padding-top:2rem">
           <div class="sec-label" style="margin-bottom:1rem">Currently Open To</div>
@@ -1166,8 +1191,8 @@ footer{background:var(--black2);border-top:1px solid var(--border);padding:2.5re
 
   <footer><div class="foot-in">
     <div class="foot-logo">JVM<span>.</span></div>
-    <div class="foot-links"><button onclick="goTo('home')">Home</button><button onclick="goTo('about')">About</button><button onclick="goTo('exp')">Experience</button><button onclick="goTo('proj')">Projects</button><button onclick="goTo('contact')">Contact</button></div>
-    <div class="foot-copy">© 2026 Jonathan Varghese Moncy · Dubai, UAE</div>
+    <div class="foot-links"><button onclick="goTo('home')">Home</button><button onclick="goTo('about')">About</button><button onclick="goTo('exp')">Experience</button><button onclick="goTo('proj')">Projects</button><button onclick="goTo('blog')">Blog</button><button onclick="goTo('contact')">Contact</button></div>
+    <div style="display:flex;align-items:center;gap:1rem"><a href="https://linkedin.com/in/jonathan-moncy-49a02a246" target="_blank" rel="noopener" style="color:var(--muted);font-size:.7rem;letter-spacing:.04em;transition:color .2s" onmouseover="this.style.color='#F5C542'" onmouseout="this.style.color=''">LinkedIn</a><div class="foot-copy">© 2026 Jonathan Varghese Moncy · Dubai, UAE</div></div>
   </div></footer>
 </div>
 
@@ -1298,17 +1323,19 @@ const routeMap={
   'skills':'skills',
   'certifications':'certs','certs':'certs',
   'projects':'proj','proj':'proj',
-  'contact':'contact'
+  'contact':'contact',
+  'blog':'blog'
 };
 const slugMap={
   'home':'home','about':'about','exp':'experience',
   'skills':'skills','certs':'certifications',
-  'proj':'projects','contact':'contact'
+  'proj':'projects','contact':'contact',
+  'blog':'blog'
 };
 const pageLabels={
   'home':'Home','about':'About','exp':'Experience',
   'skills':'Skills','certs':'Certifications',
-  'proj':'Projects','contact':'Contact'
+  'proj':'Projects','contact':'Contact','blog':'Blog'
 };
 
 function showPage(page){
